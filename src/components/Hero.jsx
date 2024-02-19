@@ -4,18 +4,19 @@ import { ReactTyped } from "react-typed";
 import DataFile from "./Data.jsx";
 import Uc from "../Assets/images/uc.png";
 import { Link } from "react-router-dom";
+import proimage from "../Assets/Promotion.jpeg";
 
 const Hero = () => {
-  const [showPromotion, setShowPromotion] = useState(false);
+  const [showPromotion, setShowPromotion] = useState(true);
 
   useEffect(() => {
     const showTimer = setTimeout(() => {
       setShowPromotion(true);
-    }, 5000);
+    }, 3000); // Show promotion after 3 seconds
 
     const hideTimer = setTimeout(() => {
       setShowPromotion(false);
-    }, 20000);
+    }, 10000); // Hide promotion after 10 seconds
 
     return () => {
       clearTimeout(showTimer);
@@ -23,15 +24,32 @@ const Hero = () => {
     };
   }, []);
 
+  const handleCloseModal = () => {
+    setShowPromotion(false);
+  };
+
   return (
     <>
       <div
-        className="text-gray-100 pt-24"
+        className="text-gray-100 pt-24 relative" // Added relative positioning
         style={{
-          background: `URL(${HeroImage})`, // Replace 'path_to_your_image' with the actual path to your image
+          background: `URL(${HeroImage})`,
           backgroundSize: "cover",
         }}
       >
+        {showPromotion && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75">
+            <div className="max-w-md p-5 bg-white rounded-lg">
+              <button
+                className="absolute top-0 right-0 p-3 text-gray-500 hover:text-black"
+                onClick={handleCloseModal}
+              >
+                X
+              </button>
+              <img src={proimage} alt="Promotion" className="w-full" />
+            </div>
+          </div>
+        )}
         <div className="mx-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
           <ReactTyped
             className="text-xl md:text-[7xl] pt-36"
