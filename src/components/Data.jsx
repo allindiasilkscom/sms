@@ -7,6 +7,7 @@ import Ppm from '../Assets/images/15ppm.jpg'
 import Odme from '../Assets/images/odme.jpg'
 import Fgd from '../Assets/images/fgd.jpg'
 import Vm from '../Assets/images/vm.jpg'
+import fire from '../Assets/images/fire-alarm.jpg'
 
 export default function DataFile() {
     const data = [
@@ -70,6 +71,12 @@ export default function DataFile() {
         title: "VAPOUR MONITORING SYSTEM",
         description: "",
       },
+      {
+        id:"tab10",
+        imageUrl:[`${fire}`],
+        title:"Firm Alarm System",
+        description:"The fire alarm panel monitors and indicates what state the system is in at all times.",
+      }
     ];
   
     return data;

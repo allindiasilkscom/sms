@@ -25,32 +25,32 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white flex px-2 sm:px-10 navbar-container">
+    <div className="bg-gray-300 flex px-2 sm:px-10 navbar-container">
       <div>
-        <img src={Logo} alt="" className="w-[15%] " />
+        <img src={Logo} alt="" className="w-[15%] bg-gray-200 rounded-full" />
       </div>
       <div className="flex px-2 sm:px-10 justify-between items-center">
         <ul className="hidden md:flex uppercase text-[16px] font-medium">
-          <li className="p-2 sm:p-5 hover:bg-cyan-900  text-blue rounded-xl">
-            <Link to="/" className="hover:text-white transition ease-in-out delay-150">
+          <li className="p-2 sm:p-5   text-blue rounded-xl">
+            <Link to="/" className="hover:text-cyan-900  transition ease-in-out delay-150">
               Home
             </Link>
           </li>
-          <li className="p-2 sm:p-5 hover:bg-cyan-900 text-blue rounded-xl cursor-pointer">
-            <Link to="/service" className="hover:text-white transition ease-in-out delay-150">
+          <li className="p-2 sm:p-5  text-blue rounded-xl cursor-pointer">
+            <Link to="/service" className="hover:text-cyan-900 transition ease-in-out delay-150">
               Service
             </Link>
           </li>
-          <li className="p-2 sm:p-5 hover:bg-cyan-900 text-blue rounded-xl cursor-pointer">
-            <Link to='/quality' className="hover:text-white transition ease-in-out delay-150">Policy</Link>
+          <li className="p-2 sm:p-5  text-blue rounded-xl cursor-pointer">
+            <Link to='/qulity' className="hover:text-cyan-900 transition ease-in-out delay-150">Policy</Link>
           </li>
-          <li className="p-2 sm:p-5 hover:bg-cyan-900  text-blue rounded-xl cursor-pointer">
-            <Link to="/about" className="hover:text-white transition ease-in-out delay-150">
+          <li className="p-2 sm:p-5   text-blue rounded-xl cursor-pointer">
+            <Link to="/about" className="hover:text-cyan-900 transition ease-in-out delay-150">
               AboutUS
             </Link>
           </li>
-          <li className="p-2 sm:p-5 hover:bg-cyan-900  text-blue rounded-xl cursor-pointer">
-            <Link to="/contact" className="hover:text-white transition ease-in-out delay-150">Contact</Link>   
+          <li className="p-2 sm:p-5   text-blue rounded-xl cursor-pointer">
+            <Link to="/contact" className="hover:text-cyan-900 transition ease-in-out delay-150">Contact</Link>   
           </li>
         </ul>
       </div>
@@ -61,7 +61,7 @@ const Navbar = () => {
         className={
           !nav
             ? "fixed left-[100%] transition-transform duration-300 ease-in-out cursor-pointer"
-            : "fixed left-0 top-0 w-[60%] sm:w-[40%] h-full text-blue-600 bg-[#efeff1] ease-in-out duration-300 justify-center align-middle cursor-pointer"
+            : "fixed left-0 top-0 w-[40%] sm:w-[40%] h-full text-blue-600 bg-[#efeff1] ease-in-out duration-300 justify-center align-middle cursor-pointer"
         }
       >
         <div>
@@ -69,12 +69,12 @@ const Navbar = () => {
         </div>
         <ul className="uppercase p-2 sm:p-4  ease-in-out">
           <li className="p-2 sm:p-5 hover:bg-cyan-900  hover:text-white rounded-xl scroll-m-24">
-            <Link to="/" className="hover:text-white transition ease-in-out delay-150">
+            <Link to="/" className="hover:text-gray-200 transition ease-in-out delay-150">
               Home
             </Link>
           </li>
           <li className="p-2 sm:p-5 hover:bg-cyan-900 rounded hover:text-white rounded-xl">
-            <Link to="/service" className="hover:text-white transition ease-in-out delay-150">
+            <Link to="/service" className="hover:text-gray-200 transition ease-in-out delay-150">
               Service
             </Link>
           </li>
@@ -82,12 +82,12 @@ const Navbar = () => {
             QUALITY POLICY
           </li>
           <li className="p-2 sm:p-5 hover:bg-cyan-900 rounded hover:text-white rounded-xl">
-            <Link to="/about" className="hover:text-white transition ease-in-out delay-150">
+            <Link to="/about" className="hover:text-gray-200 transition ease-in-out delay-150">
               AboutUS
             </Link>
           </li>
           <li className="p-2 sm:p-5 hover:bg-cyan-900 rounded hover:text-white rounded-xl">
-            <Link to="/contact" className="hover:text-white transition ease-in-out delay-150">Contact</Link>   
+            <Link to="/contact" className="hover:text-gray-200 transition ease-in-out delay-150">Contact</Link>   
           </li>
         </ul>
       </div>
