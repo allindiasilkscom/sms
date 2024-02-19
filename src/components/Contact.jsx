@@ -34,8 +34,8 @@ const Contact = () => {
           East. 421503
       <br></br>
       <br></br>
-          <p className="text-white">If a form is not your style,</p><br></br>
-          <p className="text-white">Number:- 8788745767  </p>
+    
+          <p className="text-white">Contact Number :- 8788745767 || 8452010594  </p>
           <p className="text-white">Email Id:- sierramarineservices@outlook.com  </p>
         </div>
         <div className="pb-12">
