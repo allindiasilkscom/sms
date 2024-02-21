@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HeroImage from "../Assets/hero.jpeg";
+import HeroImages from "../Assets/images/hero.jpg";
 import { ReactTyped } from "react-typed";
 import DataFile from "./Data.jsx";
 import Uc from "../Assets/images/uc.png";
@@ -31,14 +31,15 @@ const Hero = () => {
   return (
     <>
       <div
-        className="text-gray-100 pt-24 relative" // Added relative positioning
+        className="text-gray-100 pt-12 relative" // Added relative positioning
         style={{
-          background: `URL(${HeroImage})`,
-          backgroundSize: "cover",
+          background: `URL(${HeroImages})`,
+          backgroundSize: "cover", backgroundAttachment: "fixed",
+          minHeight: "calc(100vh - 64px)",
         }}
       >
         {showPromotion && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="absolute inset-0 flex items-center justify-center ">
             <div className="max-w-md p-5 bg-white rounded-lg">
               <button
                 className="absolute top-0 right-0 p-3 text-gray-500 hover:text-black"
@@ -50,20 +51,15 @@ const Hero = () => {
             </div>
           </div>
         )}
-        <div className="mx-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-          <ReactTyped
-            className="text-xl md:text-[7xl] pt-36"
-            strings={["SIERRA ", "MARINE ", "SERVICES"]}
-            typeSpeed={120}
-            backSpeed={140}
-            loop
-          />
-          <p className="ml-20 p-2 md:text-xl sm:text-6xl text-xl md:py-6">
+        <div className="mx-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center ">
+        
+            <div className="text-4xl font-bold md:text-[7xl] mt-20 p-2 text-pink-900 ">SIERRA MARINE SERVICES</div>
+          <p className="m-10 p-2 md:text-xl sm:text-6xl text-xl md:py-6 text-pink-900 font-bold bg-white bg-opacity-50">
             Sierra Marine Services is an ISO 9001: 2015 compliant company with a
             full line of Calibration of Marine equipment.
           </p>
           <div>
-            <p className="ml-20 md:text-xl sm:text-2xl text-xl md:py-6">
+            <p className="m-10 mb-2 md:text-xl sm:text-2xl text-xl md:py-6 text-pink-900 font-bold bg-white bg-opacity-50">
               In 2014, Sierra Marine Services diversified into Marine Safety and
               Calibration Services.
             </p>
@@ -127,7 +123,7 @@ const Hero = () => {
         <div className="text-white text-center font-medium text-xl pt-5 pb-5">Locate Us</div>
         <iframe
           title="Google Maps"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d734.8552134957353!2d73.23863526947576!3d19.16285826567249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ed2d0c4de9d7%3A0x748b002b6485625f!2sGandhi%20Chowk!5e1!3m2!1sen!2sin!4v1708244853089!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3395.582471195012!2d73.21447968977694!3d19.186408149801526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEmpire%20Industrial%20Centrum%2C%20Rashtrakuta%2C%20Unit%20No%20287%2C%203rd%20Floor%20Chikhloli%2C%20Kalyan-Badlapur%20Road%2C%20Ambernath%20West%2C%20Thane%20421505!5e1!3m2!1sen!2sin!4v1708455937468!5m2!1sen!2sin"
           width="100%"
           height="90%"
           frameBorder="0"

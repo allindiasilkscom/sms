@@ -1,44 +1,62 @@
 import React from "react";
 import HeroImage from "../Assets/hero.jpeg";
 
-const QulityPolicy = () => {
+const QualityPolicy = () => {
   return (
-    <div
-      className=""
+    <section
+      className="relative"
       style={{
         background: `URL(${HeroImage})`,
         backgroundSize: "cover",
       }}
     >
-      <h3 className="text-center text-white font-bold text-2xl pb-10 pt-24">
-        Quality Services
-      </h3>
-      <div className=" md:text-xl sm:text-2xl text-xl text-white font-medium">
-        <p className="font-normal text-center px-28 pt-56 ">
-          Seirra Marine Services Aims to Delver High Quality Services and to
-          Maintain Excellence in our Services .We are Determined to Carry out
-          Continual Improvement at Each and Every Stage of process.
-        </p>
-        <p className="font-normal text-center px-28 pt-10 borer-b   ">
-          We deliver excellence by:
-        </p>
-        <p className=" font-normal text-center px-28 pt-5">
-          Maintaining good relationship with our clients, hence improving
-          business performance and a win-win relationship.
-        </p>
-        <p className=" font-normal text-center px-28 pt-5 ">
-          Aiming to build a network ensuring to deliver our excellence.
-          Inspiring trust by taking responsibility, acting ethically and
-          encouraging honest and open debate.
-        </p>
-
-        <p className=" font-normal text-center px-28 pt-5 pb-10">
-          Valuing employees’ diversity and ensuring interactive environment with
-          employees and work force.
-        </p>
+      <div className="py-24 text-center">
+        <h3 className="text-pink-900 font-bold text-3xl md:text-4xl pb-5 pt-24">
+          Quality Services
+        </h3>
+        <div className=" mx-auto text-pink-900">
+          <p className="font-bold text-xl px-10 sm:px-28 pt-8 bg-white bg-opacity-50 pb-5">
+            Sierra Marine Services is committed to delivering exceptional
+            quality services and maintaining excellence in all aspects of our
+            operations. We are dedicated to continuous improvement at every
+            stage of our processes.
+          </p>
+          <p className="text-2xl px-10 sm:px-28 pt-8 pb-5 font-semibold bg-white bg-opacity-50">
+            We achieve excellence by:
+          </p>
+          <ul className="list-disc px-10 sm:px-28 text-lg bg-white bg-opacity-50">
+            <li className="mb-5">
+              <p>
+                Cultivating strong relationships with our clients to enhance
+                business performance and foster mutually beneficial outcomes.
+              </p>
+            </li>
+            <li className="mb-5">
+              <p>
+                Establishing a robust network to ensure the seamless delivery
+                of our services, consistently meeting and exceeding
+                expectations.
+              </p>
+            </li>
+            <li className="mb-5">
+              <p>
+                Inspiring trust through accountability, ethical conduct, and
+                fostering open and honest communication within our
+                organization.
+              </p>
+            </li>
+            <li>
+              <p className="pb-5">
+                Embracing diversity among our employees and fostering an
+                inclusive environment that encourages collaboration and
+                innovation.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default QulityPolicy;
+export default QualityPolicy;

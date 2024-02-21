@@ -5,39 +5,23 @@ import {
   FaInstagram,
   FaTwitterSquare,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const CurrentYear = new Date().getFullYear();
 
   return (
     <div className="footer-wrapper">
-    <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
-      <div>
-        <h1 className="w-full text-3xl font-bold text-cyan-500">About Us</h1>
-        <p className="py-4">
-          We Sierra Marine Services, Marine Service provider pledge to offers
-          very cost effective, reliable and trust worthy services to the full
-          satisfaction of our Customers and facilitate opportunities for
-          business development.
-        </p>
-      </div>
+    <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-2 gap-8 text-gray-300">
+   
       <div className="lg:col-span-2 justify-evenly grid lg:grid-cols-3 md:items-start">
-        <div>
-          <h6 className="font-medium text-gray-400">Solutions</h6>
-          <ul>
-            <li className="py-2 text-sm">PRESSURE EQUIPMENTS</li>
-            <li className="py-2 text-sm">TEMPERATURE EQUIPMENTS</li>
-            <li className="py-2 text-sm">GAS DETECTORS</li>
-            <li className="py-2 text-sm">ULLAGE TEMPERATURE INTERFACE</li>
-          </ul>
-        </div>
-
+       
         <div>
           <h6 className="font-medium text-gray-400">Legal</h6>
           <ul>
             <li className="py-2 text-sm">ISO-Certified</li>
-            <li className="py-2 text-sm">Policy</li>
-            <li className="py-2 text-sm">Terms</li>
+            <li className="py-2 text-sm"><Link to="privacy_policy">Policy</Link></li>
+            <li className="py-2 text-sm"><Link to="terms">Terms</Link></li>
           </ul>
         </div>
         <div>
@@ -57,10 +41,10 @@ const Footer = () => {
         </a>
       </div>
     </div>
-        
+   
       </div>
       <div className="text-center">
-        <h3 className="">Copyright © {CurrentYear} - Sierra Marine Services</h3>
+        <h3 className="">Copyright©{CurrentYear}- SierraMarineServices | All Right Reserved</h3>
       </div>
     </div>
     </div>
